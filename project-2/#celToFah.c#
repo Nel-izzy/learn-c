@@ -1,0 +1,19 @@
+#include <stdio.h>
+/* Print Celsius-Fahrenheit table
+   for celsius = 0, 20, 40,..., 300   */
+
+main(){
+  int fahr, celsius;
+  int lower, step, upper;
+
+  lower = 0;
+  upper = 300;
+  step = 20;
+
+  celsius = lower;
+  while(celsius <= upper){
+    fahr = 5 * (fahr-32) / 9;
+    printf("%d\t%d\n", celsius, fahr);
+    celsius = celsius + step;
+  }
+    }
